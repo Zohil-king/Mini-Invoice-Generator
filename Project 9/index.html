@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Invoice Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  </div>
+
+  <div class="invoice-container">
+    <h1>🧾 Mini Invoice Generator</h1>
+
+    <div class="form-section">
+      <label>Client Name: <input type="text" id="clientName" /></label>
+      <label>Item: <input type="text" id="itemName" /></label>
+      <label>Qty: <input type="number" id="itemQty" min="1" value="1" /></label>
+      <label>Price: <input type="number" id="itemPrice" min="0" step="0.01" /></label>
+      <button id="addItem">Add Item</button>
+
+    </div>
+
+    <div class="invoice-section">
+      <h2>Invoice</h2>
+      <p><strong>Client:</strong> <span id="displayClient">-</span></p>
+      <table id="invoiceTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="total"><strong>Total:</strong> $<span id="totalAmount">0.00</span></p>
+      <button id="printBtn">🖨️ Print Invoice</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer class="footer">
+  By Zohil Rahimzai 2025
+  </footer>
+
+</body>
+</html>
